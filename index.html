@@ -37,6 +37,78 @@
             </div>
         </div>
     </section>
+    <!-- Interactive BMI Calculator Section -->
+<section class="bmi-section">
+    <div class="container">
+        <h2>Check Your <span>BMI</span></h2>
+        <p>अपनी फिटनेस कैटेगरी जानें और सही प्लान चुनें</p>
+        
+        <div class="bmi-calculator">
+            <div class="input-group">
+                <label>Weight (kg):</label>
+                <input type="number" id="weight" placeholder="e.g. 70">
+            </div>
+            <div class="input-group">
+                <label>Height (cm):</label>
+                <input type="number" id="height" placeholder="e.g. 175">
+            </div>
+            <button onclick="calculateBMI()" class="btn btn-primary">Calculate</button>
+            
+            <div id="bmi-result" class="result-box">
+                <span id="bmi-value">--</span>
+                <p id="bmi-status">अपना वजन और लंबाई दर्ज करें</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Glassmorphism Membership Plans -->
+<section id="membership" class="pricing-section">
+    <h2>Choose Your <span>Plan</span></h2>
+    <div class="pricing-grid">
+        
+        <!-- Basic Plan -->
+        <div class="price-card">
+            <h3>BASIC</h3>
+            <div class="price">₹1,499<span>/month</span></div>
+            <ul>
+                <li>✔️ Gym Access (Off-Peak Hours)</li>
+                <li>✔️ General Trainer Support</li>
+                <li>❌ Locker Facility</li>
+                <li>❌ Nutrition Consultation</li>
+            </ul>
+            <a href="#" class="btn btn-secondary">Select Plan</a>
+        </div>
+
+        <!-- Pro Plan (Highlighed) -->
+        <div class="price-card popular">
+            <div class="popular-badge">MOST POPULAR</div>
+            <h3>PRO FIT</h3>
+            <div class="price">₹2,999<span>/month</span></div>
+            <ul>
+                <li>✔️ 24/7 Full Gym Access</li>
+                <li>✔️ Personal Trainer (2 Days/Week)</li>
+                <li>✔️ Personal Locker & Steam Bath</li>
+                <li>✔️ Customized Diet Chart</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Select Plan</a>
+        </div>
+
+        <!-- VIP Plan -->
+        <div class="price-card">
+            <h3>VIP TRANSFORM</h3>
+            <div class="price">₹4,999<span>/month</span></div>
+            <ul>
+                <li>✔️ 1-on-1 Personal Trainer</li>
+                <li>✔️ Dedicated Nutritionist</li>
+                <li>✔️ Free Supplement Kit</li>
+                <li>✔️ Access to All Workshops</li>
+            </ul>
+            <a href="#" class="btn btn-secondary">Select Plan</a>
+        </div>
+
+    </div>
+</section>
 
 </body>
 </html>
