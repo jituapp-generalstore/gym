@@ -1,4 +1,6 @@
-/* General Reset */
+/* ==========================================
+   1. GENERAL RESET & BASE STYLES
+   ========================================== */
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +11,12 @@
 body {
     background-color: #121212;
     color: #ffffff;
+    line-height: 1.6;
 }
 
-/* Navbar Style */
+/* ==========================================
+   2. NAVBAR STYLES
+   ========================================== */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -22,6 +27,7 @@ body {
     width: 100%;
     top: 0;
     z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .logo {
@@ -53,7 +59,9 @@ body {
     color: #FF5722;
 }
 
-/* Buttons */
+/* ==========================================
+   3. BUTTON STYLES
+   ========================================== */
 .btn {
     padding: 12px 28px;
     font-size: 14px;
@@ -61,8 +69,10 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     border-radius: 4px;
-    transition: transform 0.2s, background-color 0.3s;
+    transition: transform 0.2s, background-color 0.3s, border-color 0.3s;
     display: inline-block;
+    cursor: pointer;
+    border: none;
 }
 
 .btn-primary {
@@ -78,7 +88,7 @@ body {
 .btn-secondary {
     border: 2px solid #ffffff;
     color: #ffffff;
-    margin-left: 15px;
+    background: transparent;
 }
 
 .btn-secondary:hover {
@@ -87,7 +97,9 @@ body {
     transform: translateY(-2px);
 }
 
-/* Hero Section */
+/* ==========================================
+   4. HERO SECTION STYLES
+   ========================================== */
 .hero {
     height: 100vh;
     background: url('https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=1920') no-repeat center center/cover;
@@ -135,25 +147,17 @@ body {
     font-size: 16px;
     color: #cccccc;
     margin-bottom: 30px;
-    line-height: 1.6;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* बाद में JS से Hamburger Menu बनाएंगे */
-    }
-    
-    .hero-content h1 {
-        font-size: 38px;
-    }
-
-    .btn-secondary {
-        margin-left: 0;
-        margin-top: 10px;
-    }
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
-/* BMI Section Styles */
+
+/* ==========================================
+   5. INTERACTIVE BMI CALCULATOR SECTION
+   ========================================== */
 .bmi-section {
     padding: 80px 8%;
     background: #181818;
@@ -223,7 +227,9 @@ body {
     color: #FF5722;
 }
 
-/* Glassmorphism Pricing Section */
+/* ==========================================
+   6. GLASSMORPHISM PRICING SECTION
+   ========================================== */
 .pricing-section {
     padding: 80px 8%;
     text-align: center;
@@ -299,4 +305,35 @@ body {
     margin-bottom: 12px;
     font-size: 14px;
     color: #ccc;
+}
+
+/* ==========================================
+   7. RESPONSIVE DESIGN (MOBILE FRIENDS)
+   ========================================== */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* मोबाइल के लिए बाद में हैमबर्गर मेन्यू जोड़ेंगे */
+    }
+    
+    .hero-content h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+
+    .btn-secondary {
+        margin-left: 0;
+    }
+
+    .bmi-calculator {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .result-box {
+        margin-left: 0;
+        margin-top: 15px;
+    }
 }
