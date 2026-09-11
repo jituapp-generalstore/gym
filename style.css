@@ -153,3 +153,150 @@ body {
         margin-top: 10px;
     }
 }
+/* BMI Section Styles */
+.bmi-section {
+    padding: 80px 8%;
+    background: #181818;
+    text-align: center;
+}
+
+.bmi-section h2, .pricing-section h2 {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.bmi-section h2 span, .pricing-section h2 span {
+    color: #FF5722;
+}
+
+.bmi-calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #aaa;
+}
+
+.input-group input {
+    padding: 12px;
+    background: #222;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 6px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #FF5722;
+}
+
+.result-box {
+    margin-left: 20px;
+    padding: 10px 20px;
+    background: #222;
+    border-radius: 8px;
+    border-left: 4px solid #FF5722;
+}
+
+#bmi-value {
+    font-size: 24px;
+    font-weight: 900;
+    color: #FF5722;
+}
+
+/* Glassmorphism Pricing Section */
+.pricing-section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+/* Glassmorphism Card Effect */
+.price-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 30px;
+    border-radius: 16px;
+    position: relative;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.price-card:hover {
+    transform: translateY(-10px);
+    border-color: #FF5722;
+    box-shadow: 0 10px 30px rgba(255, 87, 34, 0.2);
+}
+
+/* Highlighted Popular Card */
+.price-card.popular {
+    border: 2px solid #FF5722;
+    background: rgba(255, 87, 34, 0.05);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FF5722;
+    color: #fff;
+    padding: 4px 15px;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 20px;
+}
+
+.price-card h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 38px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.price span {
+    font-size: 14px;
+    color: #888;
+}
+
+.price-card ul {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.price-card ul li {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #ccc;
+}
